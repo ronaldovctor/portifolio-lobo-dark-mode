@@ -32,7 +32,7 @@
 .theme:has(#dark:checked) #dark:checked + label {
 	background: url('../img/moon.svg');
 	background-size: cover;
-	background-color: var(--c-12);
+	background-color: var(--c-14);
 
 	border: 2px solid var(--c-0);
 }
