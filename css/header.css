@@ -1,0 +1,58 @@
+.header {
+	background: var(--bg-1);
+}
+
+.header-container {
+	padding: 40px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	max-width: 1300px;
+	margin: 0 auto;
+}
+
+.header .logo {
+	width: 104px;
+	height: 38px;
+	background: url('../img/marca.svg') no-repeat center;
+	background-size: cover;
+	align-self: center;
+}
+
+.header:has(#dark:checked) .logo {
+	background: url('../img/marca-light.svg') no-repeat center;
+}
+
+.header-menu {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.header-menu a {
+	font-size: 1.125rem;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: var(--txt-5);
+	display: block;
+	position: relative;
+}
+
+.header-menu a:hover::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: var(--txt-5);
+}
+
+@media (max-width: 600px) {
+	.header-container {
+		flex-direction: column;
+		gap: 40px;
+	}
+}

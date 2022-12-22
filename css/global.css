@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-smooth: antialiased;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: antialiased;
+}
+
+:root {
+	--c-0: #ffffff;
+	--c-1: #f5f5f5;
+	--c-2: #f0f0f0;
+	--c-3: #e0e0e0;
+	--c-4: #cccccc;
+	--c-5: #b8b8b8;
+	--c-6: #a3a3a3;
+	--c-7: #8f8f8f;
+	--c-8: #7a7a7a;
+	--c-9: #666666;
+	--c-10: #525252;
+	--c-11: #3d3d3d;
+	--c-12: #292929;
+	--c-13: #141414;
+	--c-14: #000000;
+
+	--bg-1: #ffffff;
+	--bg-2: #f5f5f5;
+	--txt-1: #ffffff;
+	--txt-2: #e0e0e0;
+	--txt-3: #a3a3a3;
+	--txt-4: #525252;
+	--txt-5: #141414;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Fira Sans', Arial, sans-serif;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.subtitulo {
+	font-size: 8rem;
+	line-height: 1;
+	text-transform: uppercase;
+	word-break: break-all;
+	max-width: 4ch;
+}
+
+@media (max-width: 800px) {
+	.subtitulo {
+		font-size: 3rem;
+		text-transform: capitalize;
+		max-width: max-content !important;
+	}
+}
